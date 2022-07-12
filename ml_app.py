@@ -5,7 +5,8 @@ import spacy
 import sklearn
 import string
 # python -m spacy download en_core_web_sm
-
+spacy.cli.download("en_core_web_sm")
+# nlp = spacy.load("en_core_web_sm-3.0.0\en_core_web_sm-3.0.0")
 nlp = spacy.load("en_core_web_sm")
 stop_words = nlp.Defaults.stop_words
 punctuations = string.punctuation
