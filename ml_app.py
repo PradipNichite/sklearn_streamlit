@@ -6,7 +6,7 @@ import sklearn
 import string
 # python -m spacy download en_core_web_sm
 @st.cache
-def download_spacy(url):
+def download_spacy():
     # Fetch data from URL here, and then clean it up.
     spacy.cli.download("en_core_web_sm")
 
